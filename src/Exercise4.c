@@ -24,6 +24,25 @@ int main(int argc, char *argv[]) {
 	int height = atoi(argv[1]);
 	int border = atoi(argv[2]);
 	//Your codes here
-	
+	int Row=height,i,j;
+	for (i=1;i<=Row;i++)
+	{
+		for (j=i;j<Row;j++)
+		{
+			printf(" ");
+		}
+		for(j=1;j<=2*i-1;j++)
+		{
+			if(i==Row||j==1||j==(2*i-1))
+			{
+				printf("*");
+			}			
+		else 
+			{
+				printf(" ");
+			}
+		}
+	printf("\n");	
+	}
 	return 0;
 }

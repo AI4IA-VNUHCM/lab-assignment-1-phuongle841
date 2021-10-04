@@ -16,6 +16,22 @@ int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int testcase = atoi(argv[1]);
 	//Your codes here
+	int n=testcase;
+
+	if (n>=2)
+	printf("%d ",2);
+	for (int i=3;i<n;i+=2)
+	{
+		int delta,SquareRoot=(int)sqrt(n);
+		for (int j=2;j<=SquareRoot;j++)
+			{
+				if (n%j==0)
+				delta=0;
+			}
+		delta=1;
+	if (delta==1)
+		{
+			printf("%d ",i);}
+		}
 	
-	return 0;
 }
